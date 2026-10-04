@@ -7,10 +7,10 @@
     <meta name="description" content="Контактная информация учебного интернет-магазина.">
     <title>Контакты — Учебный интернет-магазин</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Учебный интернет-магазин">
-    <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
-    <meta property="og:image" content="https://rubynich.github.io/kr1-html-css-shop/images/preview.jpg">
+    <meta property="og:title" content="Контакты — Учебный интернет-магазин">
+    <meta property="og:description" content="Контактная информация учебного интернет-магазина.">
 </head>
 
 <body>
@@ -27,16 +27,13 @@
                         <a class="site-nav__link" href="catalog.html">Каталог</a>
                     </li>
                     <li class="site-nav__item">
-                        <a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">Контакты</a>
+                        <a class="site-nav__link" href="product.html">Товар</a>
                     </li>
                     <li class="site-nav__item">
-                        <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+                        <a class="site-nav__link" href="order.html">Заявка</a>
                     </li>
                     <li class="site-nav__item">
-                        <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
+                        <a class="site-nav__link site-nav__link--active" aria-current="page" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -51,30 +48,36 @@
 
         <section class="section">
             <h1>Контакты</h1>
-            <p>
-                Здесь размещается контактная информация учебного интернет-магазина.
-            </p>
+            <p>Свяжитесь с нами любым удобным способом.</p>
 
-            <ul>
-                <li>Телефон: +7 (900) 000-00-00</li>
-                <li>E-mail: info@example.com</li>
-                <li>Адрес: г. Москва, учебный проект</li>
+            <ul class="contacts-list">
+                <li class="contacts-list__item"><strong>Телефон:</strong> +7 (900) 000-00-00</li>
+                <li class="contacts-list__item"><strong>E-mail:</strong> info@example.com</li>
+                <li class="contacts-list__item"><strong>Адрес:</strong> г. Москва, учебный проект</li>
             </ul>
         </section>
 
         <section class="section" id="feedback">
             <h2 class="section__title">Обратная связь</h2>
-            <p>
-                Для отправки заявки используйте форму в модальном окне на главной странице.
-            </p>
-            <a class="button button--primary" href="index.html#contacts">Перейти к форме</a>
+            <p>Для отправки заявки используйте форму на странице заявки.</p>
+            <a class="button button--primary" href="order.html">Перейти к форме</a>
         </section>
     </main>
 
     <footer class="site-footer" id="contacts">
-        <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-        <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+        <div class="site-footer__inner">
+            <ul class="site-footer__links">
+                <li><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+                <li><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+                <li><a class="site-footer__link" href="contacts.html">Контакты</a></li>
+            </ul>
+            <p class="site-footer__text">Тел.: +7 (900) 000-00-00, e-mail: info@example.com</p>
+            <p class="site-footer__text">&copy; 2026 Учебный проект. Все права защищены.</p>
+            <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+        </div>
     </footer>
+
+    <a class="to-top" href="#" aria-label="Наверх">Наверх</a>
 </body>
 
 </html>
